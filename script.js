@@ -14,7 +14,8 @@ function toDivide(a, b) {
     return a / b;
 }
 
-toAdd(10, 2); // Will return 12
-toSubtract(10, 2); // Will return 8
-toMultiply(10, 2); // Will return 20
-toDivide(10, 2); // Will return 5
+// Tests
+console.info(toAdd(0.1, -0.1));
+console.info(toSubtract(3, 2));
+console.info(toMultiply(46, -5));
+console.info(toDivide(15, -5));
