@@ -1,4 +1,4 @@
 # Calculator
 On-screen calculator using JavaScript, HTML and CSS
 
-### The calculator contains functions for the following basic math operations typically found on simple calculators: add, subtract, multiply, divide
+- [x] The calculator contains functions for the following basic math operations: add, subtract, multiply, divide
