@@ -14,6 +14,25 @@ function toDivide(a, b) {
     return a / b;
 }
 
+function toOperate(operation, num1, num2) {
+    switch (operation) {
+      case 'add':
+        return toAdd(num1, num2);
+        break;
+      case 'subtract':
+        return toSubtract(num1, num2);
+        break;
+      case 'multiply':
+        return toMultiply(num1, num2);
+        break;
+      case 'divide':
+        return toDivide(num1, num2);
+        break;
+      default:
+        console.log("An error occurred, please try again.");
+    }
+  }
+
 // Tests
 console.info(toAdd(0.1, -0.1));
 console.info(toSubtract(3, 2));
