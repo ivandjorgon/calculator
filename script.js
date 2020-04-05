@@ -16,16 +16,16 @@ function toDivide(a, b) {
 
 function toOperate(operation, num1, num2) {
     switch (operation) {
-      case 'add':
+      case 'toAdd':
         return toAdd(num1, num2);
         break;
-      case 'subtract':
+      case 'toSubtract':
         return toSubtract(num1, num2);
         break;
-      case 'multiply':
+      case 'toMultiply':
         return toMultiply(num1, num2);
         break;
-      case 'divide':
+      case 'toDivide':
         return toDivide(num1, num2);
         break;
       default:
