@@ -1,3 +1,12 @@
+const display = document.body.querySelector('input[name="result"]');
+const buttons = document.body.querySelectorAll('input[type="button"]');
+console.log(document.body.querySelector('input[name="result"]'));
+console.log(document.body.querySelectorAll('input[type="button"]'));
+
+buttons.forEach(item => item.addEventListener('click', function(e) {
+display.textContent = e.target.textContent;
+}));
+
 function toAdd(a, b) {
     return a + b;
 }
