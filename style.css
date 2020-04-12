@@ -4,13 +4,14 @@
   }
 
   .title { 
-    margin-bottom: 10px; 
+    margin: auto;
+    margin-bottom: 5px; 
     text-align: center; 
     width: 298px; 
     color: black;
     background-color: lightgray;
     border: solid black 2px; 
-    display: inline-block;
+    display: inline-flexbox;
   } 
 
   input[type="button"] { 
