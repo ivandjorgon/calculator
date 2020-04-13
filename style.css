@@ -10,8 +10,7 @@
     width: 298px; 
     color: black;
     background-color: lightgray;
-    border: solid black 2px; 
-    display: inline-flexbox;
+    border: solid black 2px;
   } 
 
   input[type="button"] { 
