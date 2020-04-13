@@ -1,7 +1,19 @@
-const display = document.body.querySelector('input[name="result"]');
-const buttons = document.body.querySelectorAll('input[type="button"]');
-console.log(document.body.querySelector('input[name="result"]'));
-console.log(document.body.querySelectorAll('input[type="button"]'));
+const display = document.querySelector('input[name="result"]');
+let displayValue = 0;
+
+// clickNum function here
+
+document.querySelectorAll('.number').forEach(num => {
+  num.addEventListener('click', e => {
+    // call clickNum
+    // set the texContent of your display element to the value stored in displayValue
+  });
+});
+
+// const display = document.body.querySelector('input[name="result"]');
+// const buttons = document.body.querySelectorAll('input[type="button"]');
+// console.log(document.body.querySelector('input[name="result"]'));
+// console.log(document.body.querySelectorAll('input[type="button"]'));
 
 buttons.forEach(item => item.addEventListener('click', function(e) {
 display.textContent = e.target.textContent;
