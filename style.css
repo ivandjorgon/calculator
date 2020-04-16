@@ -1,27 +1,90 @@
-* {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
+#calculatorContainer {
+  margin: auto;
+  height: 400px;
+  width: 250px;
+  border: 5px solid black;
+  border-radius: 25px;
+  background-color: black;
+  box-shadow: 10px 10px 2px slategrey;
+}
+
+
+
+.output {
+  height: 100px;
+  width: 250px;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  border-bottom: 1px solid white;
+}
+
+p {
+  color: white;
+  border-bottom: 1px white solid;
+  font-size: large;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+h1 {
+  padding: 10% 0;
+  color: white;
+  font-size: medium;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+
+  max-width: 240px;
+}
+
+
+.input {
+  height: 300px;
+  width: 250px;
+
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 60px;
+}
+
+button {
+  cursor: pointer;
+  padding: initial;
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
+  border-radius: 25px;
+  background: white;
+}
+
+.operator {
+  background: black;
+  color: white;
   }
 
-  .title { 
-    margin: auto;
-    margin-bottom: 5px; 
-    text-align: center; 
-    width: 298px; 
-    color: black;
-    background-color: lightgray;
-    border: solid black 2px;
-  } 
+#button-equal {
+  background: black;
+  color: white;
+}
 
-  input[type="button"] { 
-    background-color: lightgray;
-    color: black; 
-    border: solid black 2px; 
-    width: 100%;
-  } 
+[id^="button-"]:hover {
+  background: darkgrey !important;
+}
 
-  input[type="text"] { 
-    background-color:white;
-    border: solid black 2px; 
-    width: 100%; 
-  } 
+#button-clear {
+  width: 200%;
+  background: deepskyblue;
+}
+
+#button-backspace {
+  width: 200%;
+  margin: 0 0 0 100%;
+  background: orangered;
+  font-size: xx-large;
+}

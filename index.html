@@ -6,37 +6,45 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <div class = title>Calculator</div> 
-      <table border="7" align="center"> 
-         <tr> 
-            <td colspan="3"><input type="text" name="result"/></td> 
-            <td><input type="button" value="c" onclick="clr()"/> </td> 
-         </tr> 
-         <tr> 
-            <td><input type="button" value="1" onclick="dis('1')"/> </td> 
-            <td><input type="button" value="2" onclick="dis('2')"/> </td> 
-            <td><input type="button" value="3" onclick="dis('3')"/> </td> 
-            <td><input type="button" value="/" onclick="dis('/')"/> </td> 
-         </tr> 
-         <tr> 
-            <td><input type="button" value="4" onclick="dis('4')"/> </td> 
-            <td><input type="button" value="5" onclick="dis('5')"/> </td> 
-            <td><input type="button" value="6" onclick="dis('6')"/> </td> 
-            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
-         </tr> 
-         <tr> 
-            <td><input type="button" value="7" onclick="dis('7')"/> </td> 
-            <td><input type="button" value="8" onclick="dis('8')"/> </td> 
-            <td><input type="button" value="9" onclick="dis('9')"/> </td> 
-            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
-         </tr> 
-         <tr> 
-            <td><input type="button" value="." onclick="dis('.')"/> </td> 
-            <td><input type="button" value="0" onclick="dis('0')"/> </td> 
-            <td><input type="button" value="=" onclick="solve()"/> </td> 
-            <td><input type="button" value="*" onclick="dis('*')"/> </td> 
-         </tr> 
-      </table> 
-    <script src="script.js"></script>
+   <div id = "calculatorContainer">
+      <div class = "output">
+        <p id = "results-display"></p>
+        <h1></h1>
+      </div>
+
+   <div class = "input">
+      <div class = "row">
+      <button id = "button-clear">Clear</button>
+      <button id = "button-backspace">🠐</button>
+   </div>
+
+   <div class = "row">
+      <button id = "button-7" class = "number">7</button>
+      <button id = "button-8" class = "number">8</button>
+      <button id = "button-9" class = "number">9</button>
+      <button id = "button-divide" class = "operator">÷</button>
+   </div>
+
+   <div class = "row">
+      <button id = "button-4" class = "number">4</button>
+      <button id = "button-5" class = "number">5</button>
+      <button id = "button-6" class = "number">6</button>
+      <button id = "button-multiply" class = "operator">x</button>
+   </div>
+
+   <div class = "row">
+      <button id = "button-1" class = "number">1</button>
+      <button id = "button-2" class = "number">2</button>
+      <button id = "button-3" class = "number">3</button>
+      <button id = "button-subtract" class = "operator">-</button>
+   </div>
+
+   <div class = "row">
+      <button id = "button-0" class = "number">0</button>
+      <button id = "button-decimal">.</button>
+      <button id = "button-equal">=</button>
+      <button id = "button-add" class = "operator">+</button>
+   </div>
+   <script src="script.js"></script>
   </body>
 </html>
