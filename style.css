@@ -1,11 +1,10 @@
 #calculatorContainer {
   margin: auto;
-  height: 400px;
+  height: 315px;
   width: 250px;
-  border: 5px solid black;
-  border-radius: 25px;
-  background-color: black;
-  box-shadow: 10px 10px 2px slategrey;
+  border: 10px solid whitesmoke;
+  border-radius: 0px;
+  background-color: whitesmoke;
 }
 
 
@@ -15,14 +14,15 @@
   width: 250px;
   text-align: center;
   font-weight: bold;
-  font-size: xx-large;
-  border-bottom: 1px solid white;
+  font-size: x-large;
+  border-bottom: 1px solid whitesmoke;
 }
 
 p {
-  color: white;
-  border-bottom: 1px white solid;
-  font-size: large;
+  color: lightslategray;
+  border-bottom: 1px solid lightslategray;
+  font-size: medium;
+  font-family: "Lucida Console", Courier, monospace;
   text-align: right;
   white-space: nowrap;
   overflow: hidden;
@@ -30,14 +30,15 @@ p {
 }
 
 h1 {
-  padding: 10% 0;
-  color: white;
-  font-size: medium;
+  padding: 3% 0;
+  color: black;
+  font-size: large;
+  font-family: "Lucida Console", Courier, monospace;
   text-align: right;
   white-space: nowrap;
   overflow: hidden;
 
-  max-width: 240px;
+  max-width: 290px;
 }
 
 
@@ -50,27 +51,33 @@ h1 {
 .row {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 60px;
+  grid-template-rows: 40px;
 }
 
 button {
   cursor: pointer;
   padding: initial;
   font-weight: bold;
-  font-size: small;
+  font-size: large;
+  font-family: "Lucida Console", Courier, monospace;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 1px;
   background: white;
 }
 
+
 .operator {
-  background: black;
-  color: white;
+  background: lightslategray;
+  color: black;
+  font-size: large;
+  font-family: "Lucida Console", Courier, monospace;
   }
 
 #button-equal {
-  background: black;
-  color: white;
+  background: lightskyblue;
+  color: black;
+  font-size: large;
+  font-family: "Lucida Console", Courier, monospace;
 }
 
 [id^="button-"]:hover {
@@ -79,12 +86,15 @@ button {
 
 #button-clear {
   width: 200%;
-  background: deepskyblue;
+  background: lightslategray;
+  font-size: small;
+  font-family: "Lucida Console", Courier, monospace;
 }
 
 #button-backspace {
   width: 200%;
   margin: 0 0 0 100%;
-  background: orangered;
-  font-size: xx-large;
+  background: lightslategray;
+  font-size: x-large;
+  font-family: "Lucida Console", Courier, monospace;
 }
